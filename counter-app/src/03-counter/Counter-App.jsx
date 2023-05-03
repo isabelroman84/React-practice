@@ -12,13 +12,13 @@ React que hubo un cambio y que necesito que redibuje esos cambios y se hace con 
 Cuando cambia el estado el componente se vuelve a ejecutar */
 export const CounterApp = ({ value }) => {
 
-    const [ counter, setCounter ] = useState(value)
+    let [ counter, setCounter ] = useState(value)
 
     const handleAdd = () => {
         // setCounter(counter + 1);
         setCounter((c) => c + 1);
     }
-    const handleRemove = () => setCounter(counter - 1);
+    const handleRemove = () => { counter <= 0 ? counter = 0 : setCounter(counter - 1) };
     const handleReset = () => setCounter(value);
 
   return (
