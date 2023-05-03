@@ -1,0 +1,16 @@
+html, body {
+    background-color: #21232A;
+    color: white;
+    /* le da prioridad a la primera fuente que aparece entonces se puede intercambiar
+    el orden y se le dan opciones al programa */
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 1.3rem;
+    padding: 70px;
+}
+
+button {
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    padding: 15px;
+}
